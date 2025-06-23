@@ -4,6 +4,7 @@ const App = () => {
   const [fName, setfName] = useState('');
   const [lName, setlName] = useState('');
   const [errMsg, setErrMsg] = useState('');
+  const [fullName,setFullName]=useState("")
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -12,7 +13,7 @@ const App = () => {
       setErrMsg('First and last both name are required');
     } else {
       setErrMsg('');
-      alert(`Name:${fName +lName}`);
+       setFullName(`${fName} ${lName}`);
   
     }
   };
@@ -42,6 +43,9 @@ const App = () => {
       <button type="submit">Submit</button>
       {errMsg && <p style={{ color: 'red' }}>{errMsg}</p>}
     </form>
+    <div>
+        {fullName && <h2>Full Name: {fullName}</h2>}
+    </div>
     </div>
   );
 };
