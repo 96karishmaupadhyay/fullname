@@ -41,10 +41,11 @@ const App = () => {
       />
       <br />
       <button type="submit">Submit</button>
+      
       {errMsg && <p style={{ color: 'red' }}>{errMsg}</p>}
     </form>
  
-        {fullName && <p>Full Name: {fullName}</p}
+        {fullName ?(<p>Full Name: {fullName}</p>:{""})}
 
     </div>
   );
