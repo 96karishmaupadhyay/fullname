@@ -43,9 +43,9 @@ const App = () => {
       <button type="submit">Submit</button>
       {errMsg && <p style={{ color: 'red' }}>{errMsg}</p>}
     </form>
-    <p>
-        {fullName && <h2>Full Name: {fullName}</h2>}
-    </p>
+ 
+        {fullName && <p>Full Name: {fullName}</p}
+
     </div>
   );
 };
