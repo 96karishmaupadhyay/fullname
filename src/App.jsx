@@ -28,13 +28,13 @@ const App = () => {
         placeholder="First Name"
         value={fName}
         onChange={(e) => setfName(e.target.value)}
-        required
+      
       />
       <br />
       <label htmlFor="">Last Name</label>
       <input
         type="text"
-        required
+        
         placeholder="Last Name"
         value={lName}
         onChange={(e) => setlName(e.target.value)}
